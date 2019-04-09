@@ -25,9 +25,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //View will be added in this container
         LinearLayout container = findViewById(R.id.container);
 
-        View[] childViews = new View[3];
+        View[] childViews = new View[3]; //we can have multiple child views
         LayoutInflater inflater = (LayoutInflater) this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
         //Adding multiple views
